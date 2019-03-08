@@ -48,6 +48,8 @@ Argument | Details | Default
 `--CP_dir` | dir contatining checkpoint | None (Will throw error if not given)
 `--save_dir` | dir to save output images | CURRENT_DIR  
 
+**Important**: Make sure you use test images larger than 128 x 128 pixels in order to see an effect. _Running.py_ slices the images into 128 x 128 pixel tiles and paints them black, depending on whether a crack has been detected or not. Using an image with the size of 128 x 128 pixels results in output images which are either completely black or untouched, depending on whether a crack has been found or not.
+
 ## TODO:
 
  - [ ] Streamline data loading; remove cache file system
