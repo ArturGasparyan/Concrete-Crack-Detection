@@ -134,7 +134,7 @@ def main(args):
                 for i in range(0,h_no):
                     for j in range(0,w_no):
                         a = matrix_pred[i,j]
-                        output_image[128*i:128*(i+1),128*j:128*(j+1),:] = 1-a
+                        output_image[128*i:128*(i+1),128*j:128*(j+1),:] = a
             
                 cropped_image = image[0:h_no*128,0:w_no*128,:]                    
                 pred_image = np.multiply(output_image,cropped_image)
